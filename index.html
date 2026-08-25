@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Nova Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Using Phosphor Icons for a premium look -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar glass-panel">
+            <div class="logo">
+                <i class="ph-fill ph-buildings"></i>
+                <h2>Nova<span>Hostel</span></h2>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <i class="ph ph-squares-four"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="ph ph-users"></i>
+                    <span>Students</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="ph ph-bed"></i>
+                    <span>Rooms</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="ph ph-wrench"></i>
+                    <span>Complaints</span>
+                    <span class="badge">3</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="ph ph-wallet"></i>
+                    <span>Finances</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="#" class="nav-item">
+                    <i class="ph ph-gear"></i>
+                    <span>Settings</span>
+                </a>
+                <a href="#" class="nav-item logout">
+                    <i class="ph ph-sign-out"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header glass-panel">
+                <div class="search-bar">
+                    <i class="ph ph-magnifying-glass"></i>
+                    <input type="text" placeholder="Search students, rooms, or complaints...">
+                </div>
+                
+                <div class="header-actions">
+                    <button class="icon-btn">
+                        <i class="ph ph-bell"></i>
+                        <span class="notification-dot"></span>
+                    </button>
+                    <div class="profile-menu">
+                        <img src="https://ui-avatars.com/api/?name=Admin+User&background=6b46c1&color=fff" alt="Profile" class="avatar">
+                        <div class="profile-info">
+                            <span class="name">Alex Carter</span>
+                            <span class="role">Chief Warden</span>
+                        </div>
+                        <i class="ph ph-caret-down"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-content">
+                <div class="welcome-section">
+                    <h1>Overview</h1>
+                    <p>Welcome back, here's what's happening today.</p>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card glass-panel gradient-1">
+                        <div class="stat-header">
+                            <span class="stat-title">Total Residents</span>
+                            <div class="icon-wrapper"><i class="ph ph-users-three"></i></div>
+                        </div>
+                        <div class="stat-value">428</div>
+                        <div class="stat-trend positive">
+                            <i class="ph ph-trend-up"></i>
+                            <span>+12 this month</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card glass-panel gradient-2">
+                        <div class="stat-header">
+                            <span class="stat-title">Available Rooms</span>
+                            <div class="icon-wrapper"><i class="ph ph-door"></i></div>
+                        </div>
+                        <div class="stat-value">34</div>
+                        <div class="stat-trend neutral">
+                            <i class="ph ph-minus"></i>
+                            <span>No change</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card glass-panel gradient-3">
+                        <div class="stat-header">
+                            <span class="stat-title">Pending Complaints</span>
+                            <div class="icon-wrapper"><i class="ph ph-warning-circle"></i></div>
+                        </div>
+                        <div class="stat-value">7</div>
+                        <div class="stat-trend negative">
+                            <i class="ph ph-trend-down"></i>
+                            <span>-2 since yesterday</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card glass-panel gradient-4">
+                        <div class="stat-header">
+                            <span class="stat-title">Revenue (Pending)</span>
+                            <div class="icon-wrapper"><i class="ph ph-currency-circle-dollar"></i></div>
+                        </div>
+                        <div class="stat-value">$12.4k</div>
+                        <div class="stat-trend negative">
+                            <i class="ph ph-clock"></i>
+                            <span>45 students due</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-bottom">
+                    <!-- Recent Activity -->
+                    <div class="activity-section glass-panel">
+                        <div class="section-header">
+                            <h3>Recent Complaints</h3>
+                            <button class="btn-text">View All</button>
+                        </div>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-icon electrical"><i class="ph ph-lightning"></i></div>
+                                <div class="activity-details">
+                                    <h4>Power outlet not working</h4>
+                                    <p>Room 304 - John Doe</p>
+                                </div>
+                                <span class="status-badge pending">Pending</span>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon plumbing"><i class="ph ph-drop"></i></div>
+                                <div class="activity-details">
+                                    <h4>Leaking tap in bathroom</h4>
+                                    <p>Room 212 - Sarah Smith</p>
+                                </div>
+                                <span class="status-badge in-progress">In Progress</span>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon network"><i class="ph ph-wifi-high"></i></div>
+                                <div class="activity-details">
+                                    <h4>Wi-Fi very slow</h4>
+                                    <p>Room 105 - Mike Johnson</p>
+                                </div>
+                                <span class="status-badge resolved">Resolved</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="quick-actions-section glass-panel">
+                        <div class="section-header">
+                            <h3>Quick Actions</h3>
+                        </div>
+                        <div class="actions-grid">
+                            <button class="action-btn">
+                                <div class="icon-circle"><i class="ph ph-user-plus"></i></div>
+                                <span>Add Student</span>
+                            </button>
+                            <button class="action-btn">
+                                <div class="icon-circle"><i class="ph ph-bed"></i></div>
+                                <span>Allocate Room</span>
+                            </button>
+                            <button class="action-btn">
+                                <div class="icon-circle"><i class="ph ph-megaphone"></i></div>
+                                <span>Post Notice</span>
+                            </button>
+                            <button class="action-btn">
+                                <div class="icon-circle"><i class="ph ph-receipt"></i></div>
+                                <span>Record Fee</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
